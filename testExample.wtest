@@ -1,9 +1,12 @@
-import example.pepita
+import mensajeros.*
+import destinos.*
+
 
 describe "group of tests for pepita" {
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+  test "roberto puede llevar un paquete en camion con acoplado" {
+    camion.setAcoplados(1)
+    assert.that(brooklin.pasar(chuck))
   }
 
 }
