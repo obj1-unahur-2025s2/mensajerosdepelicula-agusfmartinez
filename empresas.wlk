@@ -1,4 +1,3 @@
-import TP2.cotizacionDeLaPapa-agusfmartinez.papa.*
 import mensajeros.*
 import paquetes.*
 
@@ -14,6 +13,10 @@ object empresa {
     }else{
         paquetesPendientes.add(paquete)
     }
+  }
+
+  method mensajeros() {
+    return mensajeros
   }
 
   method contratar(mensajero) {
@@ -35,6 +38,8 @@ object empresa {
   method puedeEntregarElPrimero(paquete) {
     return if(!mensajeros.isEmpty()){
         paquete.puedeSerEntregado(mensajeros.first())
+    } else {
+      false
     }
   }
 
@@ -76,6 +81,14 @@ object empresa {
 
     method paquetePendienteMasCaro() {
       return paquetesPendientes.max({p => p.precio()})
+    }
+
+    method paquetesEnviados() {
+      return paquetesEnviados
+    }
+
+     method paquetesPendientes() {
+      return paquetesPendientes
     }
 
 }

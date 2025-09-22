@@ -1,4 +1,3 @@
-import TP2.cotizacionDeLaPapa-agusfmartinez.papa.*
 
 object roberto {
 
@@ -29,7 +28,7 @@ object chuck {
 }
 
 object neo {
-    var creditos = 0
+    var creditos = 10
 
     method peso() {
       return 0

@@ -17,6 +17,10 @@ object paquete {
     estaPago = true
   }
 
+   method cancelarPago() {
+    estaPago = false
+  }
+
   method puedeSerEntregado(mensajero) {
     return estaPago && destino.pasar(mensajero) 
   }
